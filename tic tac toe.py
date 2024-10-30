@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+import pygame
 
 valor = "X"
 tablero = [""] * 9
@@ -37,6 +38,9 @@ def reiniciar():
 
 ventana = tk.Tk()
 ventana.title("Tic Tac Toe")
+
+pygmae.mixer.init() #se inicializa pygame para usarlo con música
+sel.play_music(selg.get_asset_path(r"")#AGREGAR MÚSICA, RELATIVE PATH
 
 # Crear botones
 for i in range(9):  
